@@ -1,0 +1,120 @@
+#navbar {
+    background-color: #F1F1F1;
+    width: 100%;
+}
+
+#navbar #navbar-header {
+    background-color: #FFCF31;
+    overflow-y: auto;
+}
+#navbar #navbar-header #nav-home-button {
+    background-color: #FFCF31;
+    color: #414141;
+    max-width: 1024px;
+    display: flex;
+    margin: auto;
+    padding: 1em;
+    text-decoration: none;
+    align-items: center;
+}
+#navbar #navbar-header #nav-home-button:hover {
+    background-color: #ffc400;
+}
+#navbar #navbar-header #nav-home-button img {
+    height: 2em;
+    width: 2em;
+    margin-right: 1em;
+}
+
+#navbar #navbar-header #navbar-nav-close-button {
+    display: none;
+    height: 4em;
+    width: 4em;
+    padding: 1em;
+}
+#navbar #navbar-header #navbar-nav-close-button:hover {
+    background-color: #ffc400;
+    cursor: pointer;
+}
+
+
+#navbar #navbar-nav {
+    max-width: 1024px;
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow-y: auto;
+}
+#navbar #navbar-nav li {
+    align-self: stretch;
+    display: flex;
+}
+#navbar #navbar-nav li a {
+    color: #414141;
+    margin: 0;
+    padding: 1em;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+#navbar #navbar-nav li a:hover {
+    background-color: #ffde70;
+}
+
+#gotop-button {
+    display: block;
+    width: 3em;
+    height: 3em;
+    position: sticky;
+    bottom: 0;
+    left: 100%;
+    background-color: #FFCF31;
+}
+#gotop-button:hover {
+    background-color: #ffc400;
+    cursor: pointer;
+}
+#gotop-button:not(.shown) {
+    display: none !important;
+}
+#gotop-button img {
+    display: block;
+    width: 3em;
+    height: 3em;
+    padding: 1em;
+}
+
+
+
+
+@media screen and (max-width: 480px) {
+    #navbar #navbar-header {
+        display: flex;
+        width: 100%;
+    }
+
+    #navbar #navbar-header #nav-home-button {
+        flex: 1;
+    }
+
+    #navbar #navbar-header #navbar-nav-close-button {
+        display: initial;
+    }
+
+    #navbar.close #navbar-nav {
+        display: none;
+    }
+    #navbar #navbar-nav {
+        flex: 1;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0;
+    }
+    #navbar #navbar-nav li a {
+        margin: 0;
+        width: 100%;
+    }
+}

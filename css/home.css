@@ -1,0 +1,98 @@
+#home-container {
+    width: 100%;
+}
+
+#first-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 85vh;
+    width: 100%;
+    padding: 1em 0;
+}
+#first-page-container #logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 1em;
+}
+#first-page-container #logo-container #logo-icon-container {
+    height: 12em;
+    width: 12em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#first-page-container #logo-container #logo-icon-container #logo-icon {
+    height: 12em;
+    width: 12em;
+    border-radius: 100%;
+}
+#first-page-container #logo-container #logo-icon-container #logo-icon:active {
+    height: 10em;
+    width: 10em;
+}
+#first-page-container #logo-container #logo-icon-container #click-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #F1F1F1;
+    color: #414141;
+    padding: 1em;
+}
+#first-page-container #logo-container #logo-icon-container #click-container:not(.shown) {
+    display: none;
+}
+#first-page-container #logo-container #logo-title {    
+    font-family: Montserrat-Subrayada-Regular;
+    font-weight: normal;
+    font-size: 4em;
+    margin: 0;
+}
+#first-page-container #logo-container #logo-subtitle {   
+    font-size: 2em;
+    font-weight: normal;
+    margin: 0;
+}
+#first-page-container #last-event-button {
+    background-color: #FFCF31;
+    color: #414141;
+    text-decoration: none;
+    text-align: center;
+    padding: 1em;
+    margin: 1em;
+}
+#first-page-container #last-event-button:hover {
+    background-color: #ffc400;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+}
+.page-container .event-button {
+    display: block;
+    max-width: 100%;
+    width: 30em;
+    text-decoration: none;
+    padding: 1em;
+    margin: 1em;
+
+    color: #414141;
+    background-color: #FFCF31;
+}
+.page-container .event-button:hover {
+    background-color: #ffc400;
+    color: #414141;
+}
+.page-container .event-button .event-cover {
+    width: 100%;
+}

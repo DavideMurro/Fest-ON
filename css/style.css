@@ -1,0 +1,57 @@
+@font-face {
+    src: URL('../fonts/Montserrat-Subrayada-Regular.ttf') format('truetype');
+    font-family: 'Montserrat-Subrayada-Regular';
+    font-display: swap;
+}
+@font-face {
+    src: URL('../fonts/Odibee-Sans-Regular.ttf') format('truetype');
+    font-family: 'Odibee-Sans-Regular';
+    font-display: swap;
+}
+
+
+html
+,body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Odibee-Sans-Regular;
+    color: #FFCF31;
+    background-color: #331E6D;
+    overflow-wrap: break-word;
+}
+body.light-mode {
+    color: #331E6D;
+    background-color: #FFCF31;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 1.8em;
+}
+
+ul
+,ol {
+    padding-left: 1.5em;
+}
+ul {
+    list-style-type: square;
+}
+
+a[href] {
+    color: #FFCF31;
+    text-decoration: underline;
+}
+a[href]:hover {
+    color: #ffc400;
+}
+
+@media screen and (min-width: 481px) {
+    html
+    ,body {
+        font-size: 1.1em;
+    }
+}

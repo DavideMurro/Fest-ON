@@ -5,6 +5,8 @@ The project is enterily written in HTML, CSS and Javascript and is full responsi
 
 ## File structure
 
+- _root_
+  HTML pages
 - **assets**
   Contains internal media used by the site (like logos and sounds)
 - **css**

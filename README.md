@@ -49,7 +49,7 @@ The project is enterily written in HTML, CSS and Javascript and is full responsi
 
 ## Demo link
 
-https://davidemurro.github.io/Fest-ON/
+https://davide-murro.github.io/fest-on/
 
 ## Screenshoots
 
